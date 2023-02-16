@@ -19,3 +19,29 @@ Otherwise do the following _ONCE_ before using the steps above.
 ## PROTIP:
 
 When you are complete with the project and have turned it in to your instructor, update README.md with details about the assignment.
+
+    {
+        static void ShowGreeting()
+        {
+            Console.WriteLine("********************");
+            Console.WriteLine("I want to play a game!");
+            Console.WriteLine("********************");
+            Console.WriteLine("Please think of a number, BUT DO NOT TELL ME between 1 - 1024");
+            Console.WriteLine();
+        }
+
+        static string PromptForString(string prompt)
+        {
+            Console.WriteLine(prompt);
+            var playerInput = Console.ReadLine();
+            return playerInput;
+
+
+        }
+    }
+
+    static void Main(string[] args)
+    {
+        ShowGreeting();
+
+        var randomNumberGenerator = new Random();
